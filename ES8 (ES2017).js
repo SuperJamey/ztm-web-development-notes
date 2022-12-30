@@ -7,13 +7,13 @@
 // add comma after last parameter, it makes adding more params easier.
 // put parameters on different lines to make the code cleaner, and also
 // it makes Github green and red changes easier to read.
-const = fun (
-    a,
-    b,
-    c,
-    d,   
-    e,
-    ) => {
+const fun = (
+            a,
+            b,
+            c,
+            d,   
+            e,
+            ) => {
     console.log(a);
 }
 
@@ -24,7 +24,7 @@ Object.values
 Object.entries
 Object.keys
 
-let obj = {      // not an array, can't us map, filter, or reduce
+let obj = {      // not an array, can't use map, filter, or reduce
     username0: 'Santa',
     username1: 'Rudolf',
     username2: 'Mr Grinch',
@@ -40,9 +40,10 @@ Object.keys(obj).forEach((key, index) => {  // now can use obj like an array on 
 Object.values(obj).forEach(value => {
     console.log(value);
 })
-VM219:2 Santa  //result
-VM219:2 Rudolf
-VM219:2 Mr Grinch
+// Result
+VM219:2 [Santa]
+VM219:2 [Rudolf]
+VM219:2 [MrGrinch]
 undefined
 
 
@@ -90,7 +91,7 @@ turtle = turtle.trim().padEnd(9, '=');
 
 
 // #3) Get the below object to go from:
-let obj = {
+let obj2 = {
   my: 'name',
   is: 'Rudolf',
   the: 'raindeer'
@@ -98,4 +99,4 @@ let obj = {
 // to this:
 'my name is Rudolf the raindeer'
 
-Object.entries(obj).map(value => value.join(" ")).join(' ')
+Object.entries(obj2).map(value => value.join(" ")).join(' ')
